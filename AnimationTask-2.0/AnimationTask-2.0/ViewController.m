@@ -19,6 +19,9 @@
         case 2:
             [self.navigationController pushViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"AnimationTwo"] animated:YES];
             break;
+        case 3:
+            [self.navigationController pushViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"AnimationThree"] animated:YES];
+            break;
         default:
             break;
     }

@@ -16,6 +16,7 @@
 		5893F44C1F485897005ED3DC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5893F44B1F485897005ED3DC /* QuartzCore.framework */; };
 		5893F44F1F485C42005ED3DC /* AnimationOrbitsAndPlanetsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5893F44E1F485C42005ED3DC /* AnimationOrbitsAndPlanetsController.m */; };
 		5893F4521F4874DD005ED3DC /* AnimationTickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5893F4511F4874DD005ED3DC /* AnimationTickerController.m */; };
+		5893F4551F48824B005ED3DC /* AnimationButtonsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5893F4541F48824B005ED3DC /* AnimationButtonsController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,8 @@
 		5893F44E1F485C42005ED3DC /* AnimationOrbitsAndPlanetsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationOrbitsAndPlanetsController.m; sourceTree = "<group>"; };
 		5893F4501F4874DD005ED3DC /* AnimationTickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationTickerController.h; sourceTree = "<group>"; };
 		5893F4511F4874DD005ED3DC /* AnimationTickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationTickerController.m; sourceTree = "<group>"; };
+		5893F4531F48824B005ED3DC /* AnimationButtonsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationButtonsController.h; sourceTree = "<group>"; };
+		5893F4541F48824B005ED3DC /* AnimationButtonsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationButtonsController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,8 @@
 				5893F44E1F485C42005ED3DC /* AnimationOrbitsAndPlanetsController.m */,
 				5893F4501F4874DD005ED3DC /* AnimationTickerController.h */,
 				5893F4511F4874DD005ED3DC /* AnimationTickerController.m */,
+				5893F4531F48824B005ED3DC /* AnimationButtonsController.h */,
+				5893F4541F48824B005ED3DC /* AnimationButtonsController.m */,
 			);
 			path = "AnimationTask-2.0";
 			sourceTree = "<group>";
@@ -178,6 +183,7 @@
 			files = (
 				5893F43B1F4854D8005ED3DC /* ViewController.m in Sources */,
 				5893F4381F4854D8005ED3DC /* AppDelegate.m in Sources */,
+				5893F4551F48824B005ED3DC /* AnimationButtonsController.m in Sources */,
 				5893F44F1F485C42005ED3DC /* AnimationOrbitsAndPlanetsController.m in Sources */,
 				5893F4521F4874DD005ED3DC /* AnimationTickerController.m in Sources */,
 				5893F4351F4854D8005ED3DC /* main.m in Sources */,
