@@ -15,6 +15,7 @@
 		5893F4431F4854D8005ED3DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5893F4411F4854D8005ED3DC /* LaunchScreen.storyboard */; };
 		5893F44C1F485897005ED3DC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5893F44B1F485897005ED3DC /* QuartzCore.framework */; };
 		5893F44F1F485C42005ED3DC /* AnimationOrbitsAndPlanetsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5893F44E1F485C42005ED3DC /* AnimationOrbitsAndPlanetsController.m */; };
+		5893F4521F4874DD005ED3DC /* AnimationTickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5893F4511F4874DD005ED3DC /* AnimationTickerController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,8 @@
 		5893F44B1F485897005ED3DC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		5893F44D1F485C42005ED3DC /* AnimationOrbitsAndPlanetsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationOrbitsAndPlanetsController.h; sourceTree = "<group>"; };
 		5893F44E1F485C42005ED3DC /* AnimationOrbitsAndPlanetsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationOrbitsAndPlanetsController.m; sourceTree = "<group>"; };
+		5893F4501F4874DD005ED3DC /* AnimationTickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationTickerController.h; sourceTree = "<group>"; };
+		5893F4511F4874DD005ED3DC /* AnimationTickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationTickerController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +79,8 @@
 				5893F4331F4854D8005ED3DC /* Supporting Files */,
 				5893F44D1F485C42005ED3DC /* AnimationOrbitsAndPlanetsController.h */,
 				5893F44E1F485C42005ED3DC /* AnimationOrbitsAndPlanetsController.m */,
+				5893F4501F4874DD005ED3DC /* AnimationTickerController.h */,
+				5893F4511F4874DD005ED3DC /* AnimationTickerController.m */,
 			);
 			path = "AnimationTask-2.0";
 			sourceTree = "<group>";
@@ -174,6 +179,7 @@
 				5893F43B1F4854D8005ED3DC /* ViewController.m in Sources */,
 				5893F4381F4854D8005ED3DC /* AppDelegate.m in Sources */,
 				5893F44F1F485C42005ED3DC /* AnimationOrbitsAndPlanetsController.m in Sources */,
+				5893F4521F4874DD005ED3DC /* AnimationTickerController.m in Sources */,
 				5893F4351F4854D8005ED3DC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
