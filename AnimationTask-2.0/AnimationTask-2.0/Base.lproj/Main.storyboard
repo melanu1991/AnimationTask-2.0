@@ -1,26 +1,148 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ztf-oJ-aMM">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ce-ul-cSr">
+                                <rect key="frame" x="20" y="300" width="374" height="40"/>
+                                <color key="backgroundColor" white="0.88557942710000004" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="nxl-TJ-n9k"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Animation two"/>
+                                <connections>
+                                    <action selector="animationButtonsPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SeV-wg-svB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zWw-45-Dyd">
+                                <rect key="frame" x="20" y="348" width="374" height="40"/>
+                                <color key="backgroundColor" white="0.88557942710000004" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Xwa-W4-Dra"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Animation three"/>
+                                <connections>
+                                    <action selector="animationButtonsPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9O6-xx-8mb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WB2-2A-VMa">
+                                <rect key="frame" x="20" y="396" width="374" height="40"/>
+                                <color key="backgroundColor" white="0.88557942710000004" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Ubf-YW-FfX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Animation four"/>
+                                <connections>
+                                    <action selector="animationButtonsPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dJz-Hp-Ajs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LMa-2Z-h2c">
+                                <rect key="frame" x="20" y="444" width="374" height="40"/>
+                                <color key="backgroundColor" white="0.88557942710000004" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="C23-tY-IkG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Animation five"/>
+                                <connections>
+                                    <action selector="animationButtonsPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iXR-DP-Ppf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BkQ-ho-PIg">
+                                <rect key="frame" x="20" y="252" width="374" height="40"/>
+                                <color key="backgroundColor" white="0.88557942710000004" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="1XV-i6-STs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Animation one"/>
+                                <connections>
+                                    <action selector="animationButtonsPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XGJ-u0-UYX"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="zWw-45-Dyd" secondAttribute="trailing" constant="20" symbolic="YES" id="2Pt-Yf-Cmx"/>
+                            <constraint firstItem="WB2-2A-VMa" firstAttribute="top" secondItem="zWw-45-Dyd" secondAttribute="bottom" constant="8" symbolic="YES" id="6jY-AR-Bca"/>
+                            <constraint firstAttribute="trailing" secondItem="0Ce-ul-cSr" secondAttribute="trailing" constant="20" symbolic="YES" id="9oj-2G-kAX"/>
+                            <constraint firstItem="0Ce-ul-cSr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="Av7-LB-xJZ"/>
+                            <constraint firstItem="0Ce-ul-cSr" firstAttribute="top" secondItem="BkQ-ho-PIg" secondAttribute="bottom" constant="8" symbolic="YES" id="DMx-U4-vyw"/>
+                            <constraint firstItem="zWw-45-Dyd" firstAttribute="top" secondItem="0Ce-ul-cSr" secondAttribute="bottom" constant="8" symbolic="YES" id="IFf-hy-iro"/>
+                            <constraint firstItem="zWw-45-Dyd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="L2V-2n-dZC"/>
+                            <constraint firstItem="WB2-2A-VMa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="M0H-wb-bOy"/>
+                            <constraint firstAttribute="trailing" secondItem="BkQ-ho-PIg" secondAttribute="trailing" constant="20" symbolic="YES" id="Pt5-56-DxR"/>
+                            <constraint firstItem="BkQ-ho-PIg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="dmB-mC-1bf"/>
+                            <constraint firstItem="LMa-2Z-h2c" firstAttribute="top" secondItem="WB2-2A-VMa" secondAttribute="bottom" constant="8" symbolic="YES" id="edb-Oi-vdK"/>
+                            <constraint firstItem="zWw-45-Dyd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="hYE-GM-X5f"/>
+                            <constraint firstItem="BkQ-ho-PIg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="igd-aB-4pR"/>
+                            <constraint firstAttribute="trailing" secondItem="LMa-2Z-h2c" secondAttribute="trailing" constant="20" symbolic="YES" id="rIO-SF-P8O"/>
+                            <constraint firstAttribute="trailing" secondItem="WB2-2A-VMa" secondAttribute="trailing" constant="20" symbolic="YES" id="rwf-6Z-LyP"/>
+                            <constraint firstItem="LMa-2Z-h2c" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="urG-JT-Efo"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="XGX-yH-zmI"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="860" y="138.98050974512745"/>
+        </scene>
+        <!--Animation Orbits And Planets Controller-->
+        <scene sceneID="TrZ-0n-SBC">
+            <objects>
+                <viewController storyboardIdentifier="AnimationOne" id="7NY-SQ-FT6" customClass="AnimationOrbitsAndPlanetsController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SAN-Ib-Wnl"/>
+                        <viewControllerLayoutGuide type="bottom" id="Djb-TE-eoz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CSw-8q-Zmf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kN3-uH-h90" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1636" y="139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="nWr-lm-c9F">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ztf-oJ-aMM" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qOm-aJ-72w">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="y7F-LF-7hP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MFt-ni-G9x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="57" y="139"/>
         </scene>
     </scenes>
 </document>

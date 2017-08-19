@@ -13,6 +13,8 @@
 		5893F43E1F4854D8005ED3DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5893F43C1F4854D8005ED3DC /* Main.storyboard */; };
 		5893F4401F4854D8005ED3DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5893F43F1F4854D8005ED3DC /* Assets.xcassets */; };
 		5893F4431F4854D8005ED3DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5893F4411F4854D8005ED3DC /* LaunchScreen.storyboard */; };
+		5893F44C1F485897005ED3DC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5893F44B1F485897005ED3DC /* QuartzCore.framework */; };
+		5893F44F1F485C42005ED3DC /* AnimationOrbitsAndPlanetsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5893F44E1F485C42005ED3DC /* AnimationOrbitsAndPlanetsController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		5893F43F1F4854D8005ED3DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5893F4421F4854D8005ED3DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5893F4441F4854D8005ED3DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5893F44B1F485897005ED3DC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		5893F44D1F485C42005ED3DC /* AnimationOrbitsAndPlanetsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationOrbitsAndPlanetsController.h; sourceTree = "<group>"; };
+		5893F44E1F485C42005ED3DC /* AnimationOrbitsAndPlanetsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationOrbitsAndPlanetsController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5893F44C1F485897005ED3DC /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +50,7 @@
 			children = (
 				5893F4321F4854D8005ED3DC /* AnimationTask-2.0 */,
 				5893F4311F4854D8005ED3DC /* Products */,
+				5893F44A1F485897005ED3DC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,8 @@
 				5893F4411F4854D8005ED3DC /* LaunchScreen.storyboard */,
 				5893F4441F4854D8005ED3DC /* Info.plist */,
 				5893F4331F4854D8005ED3DC /* Supporting Files */,
+				5893F44D1F485C42005ED3DC /* AnimationOrbitsAndPlanetsController.h */,
+				5893F44E1F485C42005ED3DC /* AnimationOrbitsAndPlanetsController.m */,
 			);
 			path = "AnimationTask-2.0";
 			sourceTree = "<group>";
@@ -77,6 +86,14 @@
 				5893F4341F4854D8005ED3DC /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5893F44A1F485897005ED3DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5893F44B1F485897005ED3DC /* QuartzCore.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -105,6 +122,10 @@
 		5893F4281F4854D8005ED3DC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					one,
+					two,
+				);
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = melanu1991;
 				TargetAttributes = {
@@ -152,6 +173,7 @@
 			files = (
 				5893F43B1F4854D8005ED3DC /* ViewController.m in Sources */,
 				5893F4381F4854D8005ED3DC /* AppDelegate.m in Sources */,
+				5893F44F1F485C42005ED3DC /* AnimationOrbitsAndPlanetsController.m in Sources */,
 				5893F4351F4854D8005ED3DC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
