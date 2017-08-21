@@ -18,6 +18,9 @@
 		5893F4521F4874DD005ED3DC /* AnimationTickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5893F4511F4874DD005ED3DC /* AnimationTickerController.m */; };
 		5893F4551F48824B005ED3DC /* AnimationButtonsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5893F4541F48824B005ED3DC /* AnimationButtonsController.m */; };
 		58BF07221F4AC12000163FEB /* AnimationMoveAutoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58BF07211F4AC12000163FEB /* AnimationMoveAutoController.m */; };
+		58BF07251F4ADED500163FEB /* AnimationImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58BF07241F4ADED500163FEB /* AnimationImageController.m */; };
+		58BF072C1F4AEA1100163FEB /* oneImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 58BF072A1F4AEA1100163FEB /* oneImage.jpg */; };
+		58BF072D1F4AEA1100163FEB /* twoImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 58BF072B1F4AEA1100163FEB /* twoImage.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +43,10 @@
 		5893F4541F48824B005ED3DC /* AnimationButtonsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationButtonsController.m; sourceTree = "<group>"; };
 		58BF07201F4AC12000163FEB /* AnimationMoveAutoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationMoveAutoController.h; sourceTree = "<group>"; };
 		58BF07211F4AC12000163FEB /* AnimationMoveAutoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationMoveAutoController.m; sourceTree = "<group>"; };
+		58BF07231F4ADED500163FEB /* AnimationImageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationImageController.h; sourceTree = "<group>"; };
+		58BF07241F4ADED500163FEB /* AnimationImageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationImageController.m; sourceTree = "<group>"; };
+		58BF072A1F4AEA1100163FEB /* oneImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = oneImage.jpg; sourceTree = "<group>"; };
+		58BF072B1F4AEA1100163FEB /* twoImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twoImage.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +98,10 @@
 				5893F4511F4874DD005ED3DC /* AnimationTickerController.m */,
 				5893F4531F48824B005ED3DC /* AnimationButtonsController.h */,
 				5893F4541F48824B005ED3DC /* AnimationButtonsController.m */,
+				58BF07231F4ADED500163FEB /* AnimationImageController.h */,
+				58BF07241F4ADED500163FEB /* AnimationImageController.m */,
+				58BF072A1F4AEA1100163FEB /* oneImage.jpg */,
+				58BF072B1F4AEA1100163FEB /* twoImage.png */,
 			);
 			path = "AnimationTask-2.0";
 			sourceTree = "<group>";
@@ -173,7 +184,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58BF072C1F4AEA1100163FEB /* oneImage.jpg in Resources */,
 				5893F4431F4854D8005ED3DC /* LaunchScreen.storyboard in Resources */,
+				58BF072D1F4AEA1100163FEB /* twoImage.png in Resources */,
 				5893F4401F4854D8005ED3DC /* Assets.xcassets in Resources */,
 				5893F43E1F4854D8005ED3DC /* Main.storyboard in Resources */,
 			);
@@ -190,6 +203,7 @@
 				58BF07221F4AC12000163FEB /* AnimationMoveAutoController.m in Sources */,
 				5893F4381F4854D8005ED3DC /* AppDelegate.m in Sources */,
 				5893F4551F48824B005ED3DC /* AnimationButtonsController.m in Sources */,
+				58BF07251F4ADED500163FEB /* AnimationImageController.m in Sources */,
 				5893F44F1F485C42005ED3DC /* AnimationOrbitsAndPlanetsController.m in Sources */,
 				5893F4521F4874DD005ED3DC /* AnimationTickerController.m in Sources */,
 				5893F4351F4854D8005ED3DC /* main.m in Sources */,

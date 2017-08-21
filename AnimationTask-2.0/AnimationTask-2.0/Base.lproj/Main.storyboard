@@ -144,6 +144,24 @@
             </objects>
             <point key="canvasLocation" x="2357.971014492754" y="138.58695652173915"/>
         </scene>
+        <!--Animation Image Controller-->
+        <scene sceneID="Bt5-OL-bKq">
+            <objects>
+                <viewController storyboardIdentifier="AnimationFour" id="td8-vC-3pd" customClass="AnimationImageController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="khc-Z0-tc8"/>
+                        <viewControllerLayoutGuide type="bottom" id="mwH-T8-BJS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0fK-0g-aLh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WAl-XG-gf7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3051" y="139"/>
+        </scene>
         <!--Animation Buttons Controller-->
         <scene sceneID="X8Z-hh-gMJ">
             <objects>
