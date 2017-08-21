@@ -17,6 +17,7 @@
 		5893F44F1F485C42005ED3DC /* AnimationOrbitsAndPlanetsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5893F44E1F485C42005ED3DC /* AnimationOrbitsAndPlanetsController.m */; };
 		5893F4521F4874DD005ED3DC /* AnimationTickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5893F4511F4874DD005ED3DC /* AnimationTickerController.m */; };
 		5893F4551F48824B005ED3DC /* AnimationButtonsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5893F4541F48824B005ED3DC /* AnimationButtonsController.m */; };
+		58BF07221F4AC12000163FEB /* AnimationMoveAutoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58BF07211F4AC12000163FEB /* AnimationMoveAutoController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,8 @@
 		5893F4511F4874DD005ED3DC /* AnimationTickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationTickerController.m; sourceTree = "<group>"; };
 		5893F4531F48824B005ED3DC /* AnimationButtonsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationButtonsController.h; sourceTree = "<group>"; };
 		5893F4541F48824B005ED3DC /* AnimationButtonsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationButtonsController.m; sourceTree = "<group>"; };
+		58BF07201F4AC12000163FEB /* AnimationMoveAutoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationMoveAutoController.h; sourceTree = "<group>"; };
+		58BF07211F4AC12000163FEB /* AnimationMoveAutoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationMoveAutoController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +82,8 @@
 				5893F43F1F4854D8005ED3DC /* Assets.xcassets */,
 				5893F4411F4854D8005ED3DC /* LaunchScreen.storyboard */,
 				5893F4441F4854D8005ED3DC /* Info.plist */,
+				58BF07201F4AC12000163FEB /* AnimationMoveAutoController.h */,
+				58BF07211F4AC12000163FEB /* AnimationMoveAutoController.m */,
 				5893F4331F4854D8005ED3DC /* Supporting Files */,
 				5893F44D1F485C42005ED3DC /* AnimationOrbitsAndPlanetsController.h */,
 				5893F44E1F485C42005ED3DC /* AnimationOrbitsAndPlanetsController.m */,
@@ -182,6 +187,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5893F43B1F4854D8005ED3DC /* ViewController.m in Sources */,
+				58BF07221F4AC12000163FEB /* AnimationMoveAutoController.m in Sources */,
 				5893F4381F4854D8005ED3DC /* AppDelegate.m in Sources */,
 				5893F4551F48824B005ED3DC /* AnimationButtonsController.m in Sources */,
 				5893F44F1F485C42005ED3DC /* AnimationOrbitsAndPlanetsController.m in Sources */,
@@ -343,6 +349,7 @@
 				5893F4491F4854D8005ED3DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
