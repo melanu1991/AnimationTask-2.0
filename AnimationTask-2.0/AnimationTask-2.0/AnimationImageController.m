@@ -4,6 +4,8 @@
 @interface AnimationImageController () <CAAnimationDelegate>
 
 @property (strong, nonatomic) NSArray *images;
+@property (strong, nonatomic) NSArray *layers;
+@property (strong, nonatomic) UIImage *currentImage;
 
 @end
 
@@ -11,6 +13,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    UIBarButtonItem *actionButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(switchButtonPressed:)];
+    self.navigationItem.rightBarButtonItem = actionButton;
     
     UIImage *oneImage = [UIImage imageNamed:@"oneImage.jpg"];
     UIImage *twoImage = [UIImage imageNamed:@"twoImage.png"];
@@ -26,43 +31,38 @@
     [self.view.layer addSublayer:threeLayer];
     [self.view.layer addSublayer:fourLayer];
     
-    CALayer *oneLayer1 = [self createLayerWithImage:twoImage startPoint:0.f startPointContents:0.f];
-//    CALayer *twoLayer2 = [self createLayerWithImage:twoImage startPoint:self.view.bounds.size.width / 4.f startPointContents:0.25f];
-//    CALayer *threeLayer3 = [self createLayerWithImage:twoImage startPoint:self.view.bounds.size.width / 2.f startPointContents:0.5f];
-//    CALayer *fourLayer4 = [self createLayerWithImage:twoImage startPoint:self.view.bounds.size.width / 4.f + self.view.bounds.size.width / 2.f startPointContents:0.75f];
-    
-//    CABasicAnimation *animationOne = [self createAnimationWithBeginTime:CACurrentMediaTime() + 1.f];
-//    [oneLayer addAnimation:animationOne forKey:nil];
-//    
-//    CABasicAnimation *animationTwo = [self createAnimationWithBeginTime:CACurrentMediaTime() + 2.f];
-//    [twoLayer addAnimation:animationTwo forKey:nil];
-//    
-//    CABasicAnimation *animationThree = [self createAnimationWithBeginTime:CACurrentMediaTime() + 3.f];
-//    [threeLayer addAnimation:animationThree forKey:nil];
-//    
-//    CABasicAnimation *animationFour = [self createAnimationWithBeginTime:CACurrentMediaTime() + 4.f];
-//    [fourLayer addAnimation:animationFour forKey:nil];
+    self.currentImage = oneImage;
+    self.layers = @[oneLayer, twoLayer, threeLayer, fourLayer];
+
+}
+
+- (void)switchButtonPressed:(UIBarButtonItem *)barButton {
     
     CATransition *transition = [CATransition animation];
     transition.type = kCATransitionReveal;
     transition.subtype = kCATransitionFromLeft;
-    transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
-    transition.duration = 4.f;
-    transition.beginTime = CACurrentMediaTime() + 1.f;
+    transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
+    transition.duration = 3.f;
+    
+    NSUInteger indexImage = [self.images indexOfObject:self.currentImage];
+    UIImage *image = self.images[(indexImage + 1) % 2];
+    self.currentImage = image;
+    
+    CALayer *oneLayer = self.layers[0];
+    CALayer *twoLayer = self.layers[1];
+    CALayer *threeLayer = self.layers[2];
+    CALayer *fourLayer = self.layers[3];
+    
+    [oneLayer setContents:[self createLayerWithImage:image startPoint:0.f startPointContents:0.f].contents];
+    [twoLayer setContents:[self createLayerWithImage:image startPoint:0.f startPointContents:0.f].contents];
+    [threeLayer setContents:[self createLayerWithImage:image startPoint:0.f startPointContents:0.f].contents];
+    [fourLayer setContents:[self createLayerWithImage:image startPoint:0.f startPointContents:0.f].contents];
+    
     [oneLayer addAnimation:transition forKey:nil];
+    [twoLayer addAnimation:transition forKey:nil];
+    [threeLayer addAnimation:transition forKey:nil];
+    [fourLayer addAnimation:transition forKey:nil];
     
-    oneLayer.contents = [self createLayerWithImage:twoImage startPoint:0.f startPointContents:0.f].contents;
-    
-}
-
-- (CABasicAnimation *)createAnimationWithBeginTime:(CFTimeInterval)beginTime {
-    CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"opacity"];
-    animation.fromValue = [NSNumber numberWithFloat:1.f];
-    animation.toValue = [NSNumber numberWithFloat:0.f];
-    animation.duration = 4.f;
-    [animation setBeginTime:beginTime];
-    [animation setDelegate:self];
-    return animation;
 }
 
 - (CALayer *)createLayerWithImage:(UIImage *)image startPoint:(CGFloat)startPoint startPointContents:(CGFloat)startPointContents {
