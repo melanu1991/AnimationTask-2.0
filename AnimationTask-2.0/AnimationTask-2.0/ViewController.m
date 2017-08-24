@@ -1,12 +1,5 @@
-//
-//  ViewController.m
-//  AnimationTask-2.0
-//
-//  Created by melanu1991 on 19.08.17.
-//  Copyright © 2017 melanu1991. All rights reserved.
-//
-
 #import "ViewController.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface ViewController ()
 
@@ -16,14 +9,28 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)animationButtonsPressed:(UIButton *)sender {
+    switch (sender.tag) {
+        case 1:
+            [self.navigationController pushViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"AnimationOne"] animated:YES];
+            break;
+        case 2:
+            [self.navigationController pushViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"AnimationTwo"] animated:YES];
+            break;
+        case 3:
+            [self.navigationController pushViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"AnimationThree"] animated:YES];
+            break;
+        case 4:
+            [self.navigationController pushViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"AnimationFour"] animated:YES];
+            break;
+        case 5:
+            [self.navigationController pushViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"AnimationFive"] animated:YES];
+            break;
+        default:
+            break;
+    }
 }
-
 
 @end
